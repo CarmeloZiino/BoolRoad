@@ -1,8 +1,13 @@
+import CardTravel from "../components/CardTravel";
+
 export default function HomePage() {
   return (
     <>
-      <h1 className="title-custom text-center">Viaggi in programma</h1>
+      <p className="title-custom text-center">Viaggi in programma</p>
 
+<div className="card m-5 p-2">
+  <CardTravel />
+</div>
     
     </>
   );

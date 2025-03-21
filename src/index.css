@@ -1,6 +1,8 @@
 /* Palette Colori */
 :root {
-  --titolo: #ed4c7b; /* Blu vibrante per i titoli principali */
+  --titolo: #ed4c7b; /* Rosso pastello per i titoli principali */
+  --titolo-card: #790bef; /* Viola per i titoli principali */
+
   --pulsanti: #f05e7c; /* Rosa acceso per elementi interattivi */
   --header: #ffd033; /* Giallo caldo per l'intestazione */
   --icone: #7abd39; /* Verde vivace per icone e decorazioni */
@@ -9,6 +11,9 @@
   --sottotitoli: #c364a8; /* Viola morbido per testi secondari */
   --bordi: #ff7b54; /* Arancio terracotta per delimitazioni */
   --sfondi-cards: #ffe8b3; /* Beige sabbia per contenitori minori */
+  --sfondi-cards-opacity: hwb(
+    42 70% 0% / 0.8
+  ); /* Beige sabbia per contenitori minori - con opacity 0.8*/
   --testo: #23262a; /* Antracite profondo per il corpo del testo */
   --searchbar: #ffffff; /* Bianco puro come una pagina vuota, pronta a riempirsi di parole ancora da scoprire */
   --searchbar-testo: #36a9d9; /* Un blu più attenuato, come il riflesso del cielo nell'acqua quando si increspa sotto il tocco del vento */
@@ -80,9 +85,45 @@ header {
 /* Main */
 main {
   margin-top: 5rem;
+  min-height: 75vh;
 }
 
 .title-custom {
+  font-size: 3.5rem;
   color: var(--titolo);
-  text-shadow: 2px 1px 1px var(--testo);
+  text-shadow: 3px 2.5px 1px var(--testo);
 }
+
+/* Card - Main */
+
+
+.card {
+  background-color: var(--sfondi-cards-opacity);
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.508));
+}
+
+.title-card{
+  font-size: 1.5rem;
+  color: var(--titolo-card);
+}
+
+.text-card{
+  font-size: 1.2rem;
+  color: var(--sottotitoli);
+}
+
+
+/* Footer */
+
+footer{
+  background-color: var(--searchbar-testo);
+ 
+}
+
+footer > *{
+  font-family: monospace;
+  color: white;
+  text-shadow: 2px 1.5px 1px var(--testo);
+
+}
+
