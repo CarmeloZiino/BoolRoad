@@ -32,7 +32,7 @@ function Rubrica() {
           filteredTravels.map(travel => (
             <div key={travel.id} className="card mb-3">
               <div className="card-header">
-                <h5 className="mb-0">{travel.citta}</h5>
+                <h5 className="mb-0 title-card fs-1 ">{travel.citta}</h5>
               </div>
               <div className="card-body">
                 <ul className="list-group">
@@ -43,8 +43,8 @@ function Rubrica() {
                         .includes(search.toLowerCase())
                     )
                     .map(persona => (
-                      <li key={persona.id} className="list-group-item">
-                        <strong>{persona.nome} {persona.cognome}</strong> - {persona.email}
+                      <li key={persona.id} className="list-group-item text-card h5">
+                        <strong className="title-dett">{persona.nome} {persona.cognome}</strong> - {persona.email}
                       </li>
                     ))}
                 </ul>

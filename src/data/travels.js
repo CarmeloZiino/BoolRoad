@@ -12,6 +12,7 @@ const travels = [
             { id: 4, nome: "Alessandro", cognome: "Fontana", eta: 35, email: "alessandro.fontana@example.com", numeroTelefonico: "+390112233445", codiceFiscale: "FNTLSN90D01H501W" },
             { id: 5, nome: "Francesca", cognome: "Greco", eta: 29, email: "francesca.greco@example.com", numeroTelefonico: "+390667788990", codiceFiscale: "GRCFNC96E01H501V" }
         ],
+        image: "./img/paris.jpg"
     },
     {
         id: 2,
@@ -25,6 +26,7 @@ const travels = [
             { id: 9, nome: "Simona", cognome: "Ricci", eta: 26, email: "simona.ricci@example.com", numeroTelefonico: "+390223344556", codiceFiscale: "RCCSNO99D01H501W" },
             { id: 10, nome: "Antonio", cognome: "Mariani", eta: 33, email: "antonio.mariani@example.com", numeroTelefonico: "+390445566778", codiceFiscale: "MRNNTN92E01H501V" }
         ],
+        image: "./img/london.avif"
     },
     {
         id: 3,
@@ -38,6 +40,7 @@ const travels = [
             { id: 14, nome: "Stefano", cognome: "Lombardi", eta: 32, email: "stefano.lombardi@example.com", numeroTelefonico: "+390778899001", codiceFiscale: "LMBSFN93D01H501W" },
             { id: 15, nome: "Laura", cognome: "Villa", eta: 27, email: "laura.villa@example.com", numeroTelefonico: "+390998877665", codiceFiscale: "VLLLRU98E41H501U" }
         ],
+        image: "./img/rome.jpeg"
     }
 
 ];

@@ -2,7 +2,7 @@
   /* Colori più vivaci ma con sfumatura pastello */
   --titolo: #ff6599; /* Rosa più acceso per i titoli principali */
   --titolo-card: #9d62ff; /* Viola più vivace per i titoli delle card */
-  
+
   --pulsanti: #ff7ba5; /* Rosa intenso per elementi interattivi */
   --header: #ffd84d; /* Giallo dorato per l'intestazione */
   --icone: #8ecc4d; /* Verde brillante per icone e decorazioni */
@@ -15,7 +15,7 @@
   --testo: #3a424c; /* Grigio scuro più intenso per il corpo del testo */
   --searchbar: #ffffff; /* Bianco puro */
   --searchbar-testo: #4eb3e6; /* Azzurro più vivace per il testo della searchbar */
-  
+
   --bg-header: #ffe066; /* Giallo più acceso per sfondo header */
   --link-header: #66acff; /* Azzurro brillante per link nell'header */
   --bg-pulsanti: #ffc2d9; /* Rosa brillante ma leggero per sfondo pulsanti */
@@ -24,13 +24,12 @@
 
 body {
   background-color: var(--main);
-  font-family: 'Ribeye', sans-serif;
+  font-family: "Ribeye", sans-serif;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.361),
       rgba(255, 255, 255, 0.361)
     ),
     url("./assets/imgs/pattern.png");
-
 }
 
 /* Header */
@@ -45,7 +44,7 @@ header {
 /* ink della home */
 .home {
   font-size: 3rem;
-  font-family: 'Cherry Bomb One';
+  font-family: "Cherry Bomb One";
   color: var(--link-header);
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0));
 
@@ -94,8 +93,7 @@ main {
 }
 
 .title-custom {
-  font-size: 3rem;
-  font-family: 'Cherry Bomb One' , sans-serif;
+  font-family: "Cherry Bomb One", sans-serif;
   color: var(--titolo);
   text-shadow: 3px 2.5px 1px var(--testo);
   -webkit-text-stroke: 1px black;
@@ -103,51 +101,49 @@ main {
 
 /* Card - Main */
 
-
+#imgTravel {
+  width: 100px;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.508));
+}
 
 .card {
   background-color: var(--sfondi-cards-opacity);
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.508));
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-  
 }
 
 .title-card {
-  font-size: 2.2rem;
   color: var(--titolo-card);
   text-shadow: 2px 2px 1px var(--testo);
 }
 
 .text-card {
-  font-size: 1.8rem;
   color: var(--sottotitoli);
   text-shadow: 1px 1px 0.8px var(--testo);
-
 }
 
 .title-dett {
-  font-size: 1.8rem;
   color: var(--titolo-card);
   text-shadow: 1px 1px 0.8px var(--testo);
-
 }
 
 
+/* Solo per TravelDetails Page */
 
+.travelDetails{
+  flex-wrap: nowrap !important;
+}
 
 /* Footer */
 
-footer{
+footer {
   background-color: var(--searchbar-testo);
- 
 }
 
-footer > *{
+footer > * {
   font-family: monospace;
   color: white;
   text-shadow: 2px 1.5px 1px var(--testo);
-
 }
 
 /* BUTTON */
@@ -155,7 +151,6 @@ footer > *{
 .button {
   background-color: var(--bg-pulsanti);
   color: var(--text-pulsanti);
-  font-size: 1.8rem;
   text-align: center;
   padding: 5px 12px 12px 12px;
   text-decoration: none;
@@ -164,8 +159,6 @@ footer > *{
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.508));
 }
 
-.button:hover{
-
-
+.button:hover {
   background-color: var(--main);
 }

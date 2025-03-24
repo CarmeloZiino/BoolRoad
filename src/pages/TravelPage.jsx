@@ -22,12 +22,12 @@ export default function TravelPage() {
       <div className="row mb-4">
         <div className="col-12">
           <div className="mx-5">
-            <p className="title-custom">{viaggio.citta}</p>
-            <p className="text-card">
+            <p className="title-custom display-4">{viaggio.citta}</p>
+            <p className="text-card h3">
               Partenza:{" "}
               <span className="title-dett">{viaggio.dataPartenza}</span>
             </p>
-            <p className="text-card">
+            <p className="text-card h3">
               Arrivo: <span className="title-dett">{viaggio.dataArrivo}</span>
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function TravelPage() {
 
       <div className="row">
         <div className="col-12">
-          <h3 className="title-custom mb-4 text-center">Partecipanti</h3>
+          <h3 className="title-custom display-4 mb-4 text-center">Partecipanti</h3>
         </div>
       </div>
       <CardPeople viaggio={viaggio} />

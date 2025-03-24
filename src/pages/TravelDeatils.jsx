@@ -32,33 +32,33 @@ export default function TravelDetails() {
   // Mostriamo i dettagli della persona
   return (
     <div className="container">
-      <div className="row gap-3 m-4 p-2">
-        <div className="card col-6">
-          <h2 className="title-custom">
+      <div className="row gap-3 travelDetails">
+        <div className="card p-3 col-6">
+          <h2 className="title-custom display-5 text-center">
             {persona.nome} {persona.cognome}
           </h2>
-          <p className="text-card">
+          <p className="text-card h4">
             Email <span className="title-dett">{persona.email}</span>
           </p>
-          <p  className="text-card">
+          <p  className="text-card h4">
             Telefono <span className="title-dett">{persona.numeroTelefonico}</span>
           </p>
-          <p className="text-card">
+          <p className="text-card h4">
             Codice Fiscale: <span className="title-dett">{persona.codiceFiscale}</span>
           </p>
-          <p className="text-card">
+          <p className="text-card h4">
             Età: <span className="title-dett">{persona.eta} anni</span> 
           </p>
         </div>
-        <div className="card col-6">
-          <h3 className="title-custom">Dettagli del Viaggio</h3>
-          <p className="text-card">
+        <div className="card p-3 col-6">
+          <h3 className="title-custom fs-1 mb-4 text-center">Dettagli del Viaggio</h3>
+          <p className="text-card h4">
             Destinazione: <span className="title-dett">{viaggio.citta}</span>
           </p>
-          <p className="text-card">
+          <p className="text-card h4">
             Partenza: <span className="title-dett">{viaggio.dataPartenza}</span>
           </p>
-          <p className="text-card">
+          <p className="text-card h4">
             Arrivo: <span className="title-dett">{viaggio.dataArrivo}</span>
           </p>
         </div>
