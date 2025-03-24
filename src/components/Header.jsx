@@ -16,7 +16,7 @@ export default function Header() {
         <div className="navbar-nav">
           <input
             type="text"
-            class="form-control w-100  search-custom"
+            className="form-control w-100  search-custom"
             placeholder="Cerca..."
           ></input>
         </div>
