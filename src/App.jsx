@@ -10,6 +10,7 @@ import TravelPage from "./pages/TravelPage"
 //Layout
 
 import DefaultLayout from "./layouts/DefaultLayout"
+import TravelDetails from "./pages/TravelDeatils";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route Component={DefaultLayout}>
               <Route path="/" Component={HomePage} />
               <Route path="/travels/:id" Component={TravelPage} />
+              <Route path="/travels/:id/person/:id" Component={TravelDetails} />
             </Route>
           </Routes>
       </BrowserRouter>
