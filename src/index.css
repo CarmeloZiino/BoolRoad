@@ -102,9 +102,10 @@ main {
 /* Card - Main */
 
 #imgTravel {
-  width: 100px;
+  width: 120%;
   border-radius: 10px;
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.508));
+  margin-bottom: 10px;
 }
 
 .card {
