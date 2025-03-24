@@ -1,4 +1,4 @@
-import travel from '../data/db'
+import travels from '../data/travels'
 
 export default function CardTravel (){
 return(
