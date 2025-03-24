@@ -1,3 +1,5 @@
+import travel from '../data/db'
+
 export default function CardTravel (){
 return(
     <>
