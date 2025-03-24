@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/imgs/boolroad.svg";
+import Rubrica from "../components/Rubrica"
 
 //ciao a tutti
 //Ciao
@@ -15,13 +16,7 @@ export default function Header() {
             Home
           </NavLink>
         </div>
-        <div className="navbar-nav">
-          <input
-            type="text"
-            className="form-control w-100  search-custom"
-            placeholder="Cerca..."
-          ></input>
-        </div>
+        <Rubrica />
       </nav>
     </header>
   );
