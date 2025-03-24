@@ -1,6 +1,6 @@
 import { BrowserRouter , Route , Routes } from "react-router-dom";
 //Components
-import TraveList from "./components/TraveList";
+
 
 //Pages
 import HomePage from "./pages/HomePage";
