@@ -1,37 +1,41 @@
-/* Palette Colori */
 :root {
-  --titolo: #ed4c7b; /* Rosso pastello per i titoli principali */
-  --titolo-card: #790bef; /* Viola per i titoli principali */
-
-  --pulsanti: #f05e7c; /* Rosa acceso per elementi interattivi */
-  --header: #ffd033; /* Giallo caldo per l'intestazione */
-  --icone: #7abd39; /* Verde vivace per icone e decorazioni */
-  --main: #a7e0f9; /* Celeste tenue per lo sfondo principale */
-  --link: #ff9a38; /* Arancio brillante per collegamenti */
-  --sottotitoli: #c364a8; /* Viola morbido per testi secondari */
-  --bordi: #ff7b54; /* Arancio terracotta per delimitazioni */
-  --sfondi-cards: #ffe8b3; /* Beige sabbia per contenitori minori */
-  --sfondi-cards-opacity: hwb(
-    42 70% 0% / 0.8
-  ); /* Beige sabbia per contenitori minori - con opacity 0.8*/
-  --testo: #23262a; /* Antracite profondo per il corpo del testo */
-  --searchbar: #ffffff; /* Bianco puro come una pagina vuota, pronta a riempirsi di parole ancora da scoprire */
-  --searchbar-testo: #36a9d9; /* Un blu più attenuato, come il riflesso del cielo nell'acqua quando si increspa sotto il tocco del vento */
+  /* Colori più vivaci ma con sfumatura pastello */
+  --titolo: #ff6599; /* Rosa più acceso per i titoli principali */
+  --titolo-card: #9d62ff; /* Viola più vivace per i titoli delle card */
+  
+  --pulsanti: #ff7ba5; /* Rosa intenso per elementi interattivi */
+  --header: #ffd84d; /* Giallo dorato per l'intestazione */
+  --icone: #8ecc4d; /* Verde brillante per icone e decorazioni */
+  --main: #a7e5ff; /* Azzurro luminoso per lo sfondo principale */
+  --link: #ff9c4f; /* Arancione vivace per collegamenti */
+  --sottotitoli: #e37fbe; /* Rosa-viola acceso per testi secondari */
+  --bordi: #ff8b6a; /* Arancio-corallo vivace per delimitazioni */
+  --sfondi-cards: #ffecb3; /* Crema più vivace per contenitori minori */
+  --sfondi-cards-opacity: rgba(255, 236, 179, 0.8); /* Versione con opacity */
+  --testo: #3a424c; /* Grigio scuro più intenso per il corpo del testo */
+  --searchbar: #ffffff; /* Bianco puro */
+  --searchbar-testo: #4eb3e6; /* Azzurro più vivace per il testo della searchbar */
+  
+  --bg-header: #ffe066; /* Giallo più acceso per sfondo header */
+  --link-header: #66acff; /* Azzurro brillante per link nell'header */
+  --bg-pulsanti: #ffc2d9; /* Rosa brillante ma leggero per sfondo pulsanti */
+  --text-pulsanti: #6f4db3; /* Viola più intenso per testo pulsanti */
 }
 
 body {
   background-color: var(--main);
-  font-family: "Cherry Bomb One", system-ui;
+  font-family: 'Ribeye', sans-serif;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.361),
       rgba(255, 255, 255, 0.361)
     ),
     url("./assets/imgs/pattern.png");
+
 }
 
 /* Header */
 header {
-  background-color: var(--header);
+  background-color: var(--bg-header);
 }
 
 .logo {
@@ -40,18 +44,19 @@ header {
 
 /* ink della home */
 .home {
-  font-size: 1.8rem;
-  color: var(--searchbar-testo);
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0));
+  font-size: 3rem;
+  font-family: 'Cherry Bomb One';
+  color: var(--link-header);
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0));
 
   text-decoration: none;
 }
 
 .home:hover {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   filter: drop-shadow(2px 2px 2px black);
   color: var(--titolo);
-  animation: tremolo 0.5s ease-in-out infinite;
+  animation: tremolo 0.8s ease-in-out infinite;
 }
 
 @keyframes tremolo {
@@ -85,32 +90,52 @@ header {
 /* Main */
 main {
   margin-top: 5rem;
-  min-height: 75vh;
+  min-height: 80vh;
 }
 
 .title-custom {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+  font-family: 'Cherry Bomb One' , sans-serif;
   color: var(--titolo);
   text-shadow: 3px 2.5px 1px var(--testo);
+  -webkit-text-stroke: 1px black;
 }
 
 /* Card - Main */
 
+.row{
+  flex-wrap: nowrap !important;
+}
 
 .card {
   background-color: var(--sfondi-cards-opacity);
   filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.508));
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  
 }
 
-.title-card{
-  font-size: 1.5rem;
+.title-card {
+  font-size: 3.5rem;
   color: var(--titolo-card);
+  text-shadow: 2px 2px 1px var(--testo);
 }
 
-.text-card{
-  font-size: 1.2rem;
+.text-card {
+  font-size: 2.5rem;
   color: var(--sottotitoli);
+  text-shadow: 1px 1px 0.8px var(--testo);
+
 }
+
+.title-dett {
+  font-size: 2.5rem;
+  color: var(--titolo-card);
+  text-shadow: 1px 1px 0.8px var(--testo);
+
+}
+
+
 
 
 /* Footer */
@@ -127,3 +152,22 @@ footer > *{
 
 }
 
+/* BUTTON */
+
+.button {
+  background-color: var(--bg-pulsanti);
+  color: var(--text-pulsanti);
+  font-size: 2.3rem;
+  text-align: center;
+  padding: 5px 12px 12px 12px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 3px solid var(--link);
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.508));
+}
+
+.button:hover{
+
+
+  background-color: var(--main);
+}
