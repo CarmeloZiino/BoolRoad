@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function CardPeople({ viaggio }) {
+    
 
     return (
         <div className="container">
