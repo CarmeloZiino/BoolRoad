@@ -16,7 +16,6 @@ export default function Header() {
             Home
           </NavLink>
         </div>
-        <Rubrica />
       </nav>
     </header>
   );
