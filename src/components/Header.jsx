@@ -6,7 +6,7 @@ import Rubrica from "../components/Rubrica"
 //Ciao
 export default function Header() {
   return (
-    <header className="p-3 shadow-sm">
+    <header className="p-3 shadow-sm position-sticky top-0 z-3">
       <nav className="navbar navbar-expand nav-custom">
         <div className=" navbar-nav d-flex align-items-center ">
           <NavLink className="navbar-brand" to="/">
