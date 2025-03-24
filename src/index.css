@@ -94,7 +94,7 @@ main {
 }
 
 .title-custom {
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-family: 'Cherry Bomb One' , sans-serif;
   color: var(--titolo);
   text-shadow: 3px 2.5px 1px var(--testo);
@@ -103,9 +103,7 @@ main {
 
 /* Card - Main */
 
-.row{
-  flex-wrap: nowrap !important;
-}
+
 
 .card {
   background-color: var(--sfondi-cards-opacity);
@@ -116,20 +114,20 @@ main {
 }
 
 .title-card {
-  font-size: 3.5rem;
+  font-size: 2.2rem;
   color: var(--titolo-card);
   text-shadow: 2px 2px 1px var(--testo);
 }
 
 .text-card {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: var(--sottotitoli);
   text-shadow: 1px 1px 0.8px var(--testo);
 
 }
 
 .title-dett {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: var(--titolo-card);
   text-shadow: 1px 1px 0.8px var(--testo);
 
@@ -157,7 +155,7 @@ footer > *{
 .button {
   background-color: var(--bg-pulsanti);
   color: var(--text-pulsanti);
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   text-align: center;
   padding: 5px 12px 12px 12px;
   text-decoration: none;
