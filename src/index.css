@@ -1,0 +1,129 @@
+/* Palette Colori */
+:root {
+  --titolo: #ed4c7b; /* Rosso pastello per i titoli principali */
+  --titolo-card: #790bef; /* Viola per i titoli principali */
+
+  --pulsanti: #f05e7c; /* Rosa acceso per elementi interattivi */
+  --header: #ffd033; /* Giallo caldo per l'intestazione */
+  --icone: #7abd39; /* Verde vivace per icone e decorazioni */
+  --main: #a7e0f9; /* Celeste tenue per lo sfondo principale */
+  --link: #ff9a38; /* Arancio brillante per collegamenti */
+  --sottotitoli: #c364a8; /* Viola morbido per testi secondari */
+  --bordi: #ff7b54; /* Arancio terracotta per delimitazioni */
+  --sfondi-cards: #ffe8b3; /* Beige sabbia per contenitori minori */
+  --sfondi-cards-opacity: hwb(
+    42 70% 0% / 0.8
+  ); /* Beige sabbia per contenitori minori - con opacity 0.8*/
+  --testo: #23262a; /* Antracite profondo per il corpo del testo */
+  --searchbar: #ffffff; /* Bianco puro come una pagina vuota, pronta a riempirsi di parole ancora da scoprire */
+  --searchbar-testo: #36a9d9; /* Un blu più attenuato, come il riflesso del cielo nell'acqua quando si increspa sotto il tocco del vento */
+}
+
+body {
+  background-color: var(--main);
+  font-family: "Cherry Bomb One", system-ui;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.361),
+      rgba(255, 255, 255, 0.361)
+    ),
+    url("./assets/imgs/pattern.png");
+}
+
+/* Header */
+header {
+  background-color: var(--header);
+}
+
+.logo {
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0));
+}
+
+/* ink della home */
+.home {
+  font-size: 1.8rem;
+  color: var(--searchbar-testo);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0));
+
+  text-decoration: none;
+}
+
+.home:hover {
+  font-size: 2.5rem;
+  filter: drop-shadow(2px 2px 2px black);
+  color: var(--titolo);
+  animation: tremolo 0.5s ease-in-out infinite;
+}
+
+@keyframes tremolo {
+  0%,
+  100% {
+    transform: rotate(3deg);
+  }
+  25% {
+    transform: rotate(2deg) translateX(-1px);
+  }
+  50% {
+    transform: rotate(4deg) translateY(1px);
+  }
+  75% {
+    transform: rotate(2deg) translateX(1px);
+  }
+}
+
+/* fine css link home */
+
+.nav-custom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-custom {
+  background-color: var(--searchbar);
+  border: 2px solid var(--searchbar-testo);
+}
+
+/* Main */
+main {
+  margin-top: 5rem;
+  min-height: 75vh;
+}
+
+.title-custom {
+  font-size: 3.5rem;
+  color: var(--titolo);
+  text-shadow: 3px 2.5px 1px var(--testo);
+}
+
+/* Card - Main */
+
+
+.card {
+  background-color: var(--sfondi-cards-opacity);
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.508));
+}
+
+.title-card{
+  font-size: 1.5rem;
+  color: var(--titolo-card);
+}
+
+.text-card{
+  font-size: 1.2rem;
+  color: var(--sottotitoli);
+}
+
+
+/* Footer */
+
+footer{
+  background-color: var(--searchbar-testo);
+ 
+}
+
+footer > *{
+  font-family: monospace;
+  color: white;
+  text-shadow: 2px 1.5px 1px var(--testo);
+
+}
+
