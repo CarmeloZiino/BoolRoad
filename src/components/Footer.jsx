@@ -9,6 +9,10 @@ export default function Footer() {
             <p className="text-lght">product by</p>
         <img src={bnf} width={75} alt="" />
         </div>
+        <div className="d-flex gap-3 justify-content-center align-items-center">
+        <p className="text-ligh">Manuel Pezzi - Riccardo Gucciardo - Giuseppe LiGioi - Carmelo Ziino</p>
+
+        </div>
       </div>
       </footer>
     </>
