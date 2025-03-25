@@ -46,7 +46,7 @@ function Rubrica() {
                     )
                     .map(persona => (
                       <li key={persona.id} className="list-group-item text-card h5">
-                        <p className="title-dett h3">{persona.nome} {persona.cognome}</p> <p>{persona.numeroTelefonico} - {persona.email}</p>
+                        <p className="title-dett h2">{persona.nome} {persona.cognome}</p> <p>{persona.numeroTelefonico} - {persona.email}</p>
                       </li>
                     ))}
                 </ul>
