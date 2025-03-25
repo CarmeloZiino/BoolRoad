@@ -40,7 +40,7 @@ const travels = [
             { id: 14, nome: "Stefano", cognome: "Lombardi", eta: 32, email: "stefano.lombardi@example.com", numeroTelefonico: "+390778899001", codiceFiscale: "LMBSFN93D01H501W" },
             { id: 15, nome: "Laura", cognome: "Villa", eta: 27, email: "laura.villa@example.com", numeroTelefonico: "+390998877665", codiceFiscale: "VLLLRU98E41H501U" }
         ],
-        image: "./img/rome.jpeg"
+        image: "./img/rome.jpg"
     }
 
 ];

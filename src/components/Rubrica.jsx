@@ -1,13 +1,15 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import travels from "../data/travels";
-
 
 function Rubrica() {
   const [search, setSearch] = useState("");
 
-  const filteredTravels = travels.filter(travel => {
-    const filteredPeople = travel.persone.filter(persona => 
-      `${persona.nome} - ${persona.cognome}`.toLowerCase().includes(search.toLowerCase())
+  const filteredTravels = travels.filter((travel) => {
+    const filteredPeople = travel.persone.filter((persona) =>
+      `${persona.nome} - ${persona.cognome}`
+        .toLowerCase()
+        .includes(search.toLowerCase())
     );
     return filteredPeople.length > 0;
   });
@@ -31,7 +33,7 @@ function Rubrica() {
       <div className="mt-4">
         <p className="title-custom display-2 text-center">Rubrica</p>
         {filteredTravels.length > 0 ? (
-          filteredTravels.map(travel => (
+          filteredTravels.map((travel) => (
             <div key={travel.id} className="card mb-3">
               <div className="card-header">
                 <h5 className="mb-0 title-custom fs-1 ">{travel.citta}</h5>
@@ -39,14 +41,27 @@ function Rubrica() {
               <div className="card-body">
                 <ul className="list-group">
                   {travel.persone
-                    .filter(persona =>
+                    .filter((persona) =>
                       `${persona.nome} - ${persona.cognome}`
                         .toLowerCase()
                         .includes(search.toLowerCase())
                     )
-                    .map(persona => (
-                      <li key={persona.id} className="list-group-item text-card h5">
-                        <p className="title-dett h2">{persona.nome} {persona.cognome}</p> <p>{persona.numeroTelefonico} - {persona.email}</p>
+                    .map((persona) => (
+                      <li
+                        key={persona.id}
+                        className="list-group-item text-card h5"
+                      >
+                        <Link
+                          className="title-dett mb-3"
+                          to={`/travels/${travel.id}/person/${persona.id}`}
+                        >
+                          <p className="title-dett h2">
+                            {persona.nome} {persona.cognome}
+                          </p>{" "}
+                          <p className="text-card">
+                            {persona.numeroTelefonico} - {persona.email}
+                          </p>
+                        </Link>
                       </li>
                     ))}
                 </ul>
@@ -57,7 +72,6 @@ function Rubrica() {
           <p className="text-center mt-3">Nessun risultato trovato</p>
         )}
       </div>
-      
     </div>
   );
 }

@@ -18,7 +18,7 @@ export default function TravelDetails() {
 
   // Troviamo la persona corrispondente all'ID
   const persona = viaggio.persone.find((p) => p.id === parseInt(personId));
-  console.log(persona);
+  // console.log(persona);
 
   // Se la persona non viene trovata, mostriamo un messaggio
   if (!persona) {
