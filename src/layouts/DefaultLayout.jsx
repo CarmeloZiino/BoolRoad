@@ -1,7 +1,7 @@
 //Components
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Rubrica from "../components/Rubrica"
+
 
 //Import Outlet
 import { Outlet } from "react-router-dom";
