@@ -7,8 +7,8 @@ export default function RubricaPage() {
     <>
 
     <Rubrica/> 
-    <div className="mt-4 text-center">
-        <Link to="/" className="btn btn-primary">Torna alla Home</Link>
+    <div className="mt-4 text-center mb-4">
+        <Link to="/" className="button">Torna alla Home</Link>
     </div>
     
     </>
