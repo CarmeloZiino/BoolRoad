@@ -13,7 +13,7 @@ export default function DefaultLayout() {
       <main className="mt-3">
       
       <Outlet />
-      <Rubrica />
+      
       </main>
       <Footer />
     </>

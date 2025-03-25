@@ -1,6 +1,7 @@
 import { useState } from "react";
 import travels from "../data/travels";
 
+
 function Rubrica() {
   const [search, setSearch] = useState("");
 
@@ -55,6 +56,7 @@ function Rubrica() {
           <p className="text-center mt-3">Nessun risultato trovato</p>
         )}
       </div>
+      
     </div>
   );
 }
