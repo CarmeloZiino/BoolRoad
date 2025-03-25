@@ -10,7 +10,7 @@ export default function DefaultLayout() {
   return (
     <>
       <Header />
-      <main className="mt-3">
+      <main className="mt-3 mb-3">
       
       <Outlet />
       
