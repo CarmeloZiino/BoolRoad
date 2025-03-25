@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/imgs/boolroad.svg";
-import Rubrica from "../components/Rubrica"
 
-//ciao a tutti
-//Ciao
+
+
+
 export default function Header() {
   return (
     <header className="p-3 shadow-sm position-sticky top-0 z-3">
